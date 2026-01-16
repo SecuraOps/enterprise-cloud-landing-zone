@@ -1,0 +1,197 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.2">
+  <diagram id="zJFe6z488rE-mXuWgeaW" name="Page-1">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="governanceOpsContainer" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=1;marginBottom=0;fillColor=#f8f8f8;strokeColor=#6c8ebf;rounded=1;" value="Governance &amp; Operations" vertex="1">
+          <mxGeometry height="1200" width="200" x="700" y="50" as="geometry">
+            <mxRectangle height="30" width="200" x="700" y="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="govPolicy" parent="governanceOpsContainer" style="shape=mxgraph.azure.policy;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Azure Policy" vertex="1">
+          <mxGeometry height="60" width="100" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="govDefender" parent="governanceOpsContainer" style="shape=mxgraph.azure.microsoft_defender_for_cloud;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Microsoft Defender for Cloud" vertex="1">
+          <mxGeometry height="60" width="100" x="50" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="govMonitor" parent="governanceOpsContainer" style="shape=mxgraph.azure.azure_monitor;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Azure Monitor" vertex="1">
+          <mxGeometry height="60" width="100" x="50" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="govCost" parent="governanceOpsContainer" style="shape=mxgraph.azure.cost_management;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Cost Management" vertex="1">
+          <mxGeometry height="60" width="100" x="50" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="azureTenantContainer" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=1;marginBottom=0;fillColor=#f8f8f8;strokeColor=#6c8ebf;rounded=1;" value="Azure Tenant (Entra ID)" vertex="1">
+          <mxGeometry height="150" width="600" x="50" y="50" as="geometry">
+            <mxRectangle height="30" width="600" x="50" y="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="users" parent="azureTenantContainer" style="shape=mxgraph.azure.user;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Users" vertex="1">
+          <mxGeometry height="80" width="80" x="70" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="groups" parent="azureTenantContainer" style="shape=mxgraph.azure.group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Groups" vertex="1">
+          <mxGeometry height="80" width="80" x="190" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="servicePrincipals" parent="azureTenantContainer" style="shape=mxgraph.azure.service_principal;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Service Principals" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="managedIdentities" parent="azureTenantContainer" style="shape=mxgraph.azure.managed_identity;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Managed Identities" vertex="1">
+          <mxGeometry height="80" width="80" x="430" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mgHierarchyContainer" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=1;marginBottom=0;fillColor=#f8f8f8;strokeColor=#6c8ebf;rounded=1;" value="Management Group Hierarchy" vertex="1">
+          <mxGeometry height="300" width="600" x="50" y="230" as="geometry">
+            <mxRectangle height="30" width="600" x="50" y="230" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tenantRootGroup" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Tenant Root Group" vertex="1">
+          <mxGeometry height="60" width="100" x="250" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="platformMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Platform" vertex="1">
+          <mxGeometry height="60" width="100" x="100" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="landingZonesMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Landing Zones" vertex="1">
+          <mxGeometry height="60" width="100" x="250" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sandboxMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Sandbox" vertex="1">
+          <mxGeometry height="60" width="100" x="400" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="identityMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Identity" vertex="1">
+          <mxGeometry height="50" width="80" x="50" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="connectivityMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Connectivity" vertex="1">
+          <mxGeometry height="50" width="80" x="140" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="managementMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Management" vertex="1">
+          <mxGeometry height="50" width="80" x="230" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="corpMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Corp" vertex="1">
+          <mxGeometry height="50" width="80" x="340" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="onlineMg" parent="mgHierarchyContainer" style="shape=mxgraph.azure.management_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Online" vertex="1">
+          <mxGeometry height="50" width="80" x="430" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="conn1" edge="1" parent="mgHierarchyContainer" source="tenantRootGroup" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="platformMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="300" y="120" as="sourcePoint" />
+            <mxPoint x="200" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn2" edge="1" parent="mgHierarchyContainer" source="tenantRootGroup" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="landingZonesMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="300" y="120" as="sourcePoint" />
+            <mxPoint x="300" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn3" edge="1" parent="mgHierarchyContainer" source="tenantRootGroup" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sandboxMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="300" y="120" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn4" edge="1" parent="mgHierarchyContainer" source="platformMg" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="identityMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="150" y="210" as="sourcePoint" />
+            <mxPoint x="80" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn5" edge="1" parent="mgHierarchyContainer" source="platformMg" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="connectivityMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="150" y="210" as="sourcePoint" />
+            <mxPoint x="170" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn6" edge="1" parent="mgHierarchyContainer" source="platformMg" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="managementMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="150" y="210" as="sourcePoint" />
+            <mxPoint x="260" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn7" edge="1" parent="mgHierarchyContainer" source="landingZonesMg" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="corpMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="300" y="210" as="sourcePoint" />
+            <mxPoint x="370" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn8" edge="1" parent="mgHierarchyContainer" source="landingZonesMg" style="endArrow=block;endFill=1;endSize=6;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="onlineMg" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="300" y="210" as="sourcePoint" />
+            <mxPoint x="460" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mgAnnotation1" parent="mgHierarchyContainer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" value="Azure Policy" vertex="1">
+          <mxGeometry height="20" width="90" x="500" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mgAnnotation2" parent="mgHierarchyContainer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" value="RBAC Inheritance" vertex="1">
+          <mxGeometry height="20" width="90" x="500" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="mgAnnotation3" parent="mgHierarchyContainer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" value="Cost Governance" vertex="1">
+          <mxGeometry height="20" width="90" x="500" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="platformSubsContainer" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=1;marginBottom=0;fillColor=#f8f8f8;strokeColor=#6c8ebf;rounded=1;" value="Platform Subscriptions" vertex="1">
+          <mxGeometry height="200" width="600" x="50" y="560" as="geometry">
+            <mxRectangle height="30" width="600" x="50" y="560" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="identitySub" parent="platformSubsContainer" style="shape=mxgraph.azure.resource_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Identity Subscription" vertex="1">
+          <mxGeometry height="120" width="160" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sharedIdentityServices" parent="identitySub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Shared identity services" vertex="1">
+          <mxGeometry height="20" width="140" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="keyVault" parent="identitySub" style="shape=mxgraph.azure.key_vault;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Key Vault (conceptual)" vertex="1">
+          <mxGeometry height="50" width="80" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="connectivitySub" parent="platformSubsContainer" style="shape=mxgraph.azure.resource_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Connectivity Subscription" vertex="1">
+          <mxGeometry height="120" width="160" x="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hubVnet" parent="connectivitySub" style="shape=mxgraph.azure.virtual_network;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Hub Virtual Network" vertex="1">
+          <mxGeometry height="50" width="80" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vpnExpressRoute" parent="connectivitySub" style="shape=mxgraph.azure.vpn_gateway;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="VPN / ExpressRoute" vertex="1">
+          <mxGeometry height="30" width="70" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="azureFirewall" parent="connectivitySub" style="shape=mxgraph.azure.firewall;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Azure Firewall or NVA" vertex="1">
+          <mxGeometry height="30" width="70" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="managementSub" parent="platformSubsContainer" style="shape=mxgraph.azure.resource_group;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Management Subscription" vertex="1">
+          <mxGeometry height="120" width="160" x="410" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="logAnalytics" parent="managementSub" style="shape=mxgraph.azure.log_analytics_workspace;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Log Analytics Workspace" vertex="1">
+          <mxGeometry height="50" width="80" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="azureMonitor" parent="managementSub" style="shape=mxgraph.azure.azure_monitor;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Azure Monitor" vertex="1">
+          <mxGeometry height="30" width="70" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="defenderForCloud" parent="managementSub" style="shape=mxgraph.azure.microsoft_defender_for_cloud;pointerEvents=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Defender for Cloud" vertex="1">
+          <mxGeometry height="30" width="70" x="90" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lzSubsContainer" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=1;marginBottom=0;fillColor=#f8f8f8;strokeColor=#6c8ebf;rounded=1;" value="Landing Zone Subscriptions" vertex="1">
+          <mxGeometry height="200" width="600" x="50" y="790" as="geometry">
+            <mxRectangle height="30" width="600" x="50" y="790" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="corpLzGroup" parent="lzSubsContainer" style="group;strokeColor=#6C8EBF;fillColor=#DAE8FC;" value="Corp Landing Zones" vertex="1">
+          <mxGeometry height="120" width="260" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="corpLzText1" parent="corpLzGroup" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Internal workloads" vertex="1">
+          <mxGeometry height="20" width="240" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="corpLzText2" parent="corpLzGroup" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Private endpoints" vertex="1">
+          <mxGeometry height="20" width="240" x="10" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="onlineLzGroup" parent="lzSubsContainer" style="group;strokeColor=#6C8EBF;fillColor=#DAE8FC;" value="Online Landing Zones" vertex="1">
+          <mxGeometry height="120" width="260" x="310" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="onlineLzText1" parent="onlineLzGroup" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Internet-facing workloads" vertex="1">
+          <mxGeometry height="20" width="240" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="onlineLzText2" parent="onlineLzGroup" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Public endpoints" vertex="1">
+          <mxGeometry height="20" width="240" x="10" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lzNote" parent="lzSubsContainer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;" value="Each section represents multiple subscriptions (Dev/Test/Prod conceptually)." vertex="1">
+          <mxGeometry height="20" width="300" x="150" y="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
